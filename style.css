@@ -26,6 +26,17 @@ nav .logo {
     color: #fff;
     text-decoration: none;
     letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.logo-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(38,56,89,0.10);
 }
 nav ul {
     list-style: none;
@@ -196,6 +207,20 @@ footer {
 }
 .socials img:hover {
     filter: brightness(1) invert(0.7) sepia(1) hue-rotate(30deg) saturate(3);
+}
+.discord-link {
+    margin-top: 1rem;
+}
+.discord-link a {
+    color: #7289da;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.discord-link a:hover {
+    color: #4e5d94;
+    text-decoration: underline;
 }
 @media (max-width: 1100px) {
     .features-row, .testimonials-row, .gallery-row {
