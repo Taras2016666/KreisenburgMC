@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – Kreisenburg</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form { max-width: 500px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(38,56,89,0.08);}
+        .contact-form label { display: block; margin-bottom: 0.5rem; font-weight: bold;}
+        .contact-form input, .contact-form textarea { width: 100%; padding: 0.7rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc;}
+        .contact-form button { background: #f7b801; color: #222; border: none; padding: 0.8rem 2rem; border-radius: 30px; font-weight: bold; cursor: pointer;}
+        .contact-form button:hover { background: #ffcb05;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Kreisenburg</a>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h1>Kontakt</h1>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Kreisenburg Minecraft Projekt
+    </footer>
+</body>
+</html>

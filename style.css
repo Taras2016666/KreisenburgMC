@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+nav {
+    background: #263859;
+    color: #fff;
+    padding: 1rem 0;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #f7b801;
+}
+.hero {
+    background: linear-gradient(rgba(38,56,89,0.7), rgba(38,56,89,0.7)), url('images/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 6rem 0 4rem 0;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    background: #f7b801;
+    color: #222;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.btn:hover {
+    background: #ffcb05;
+}
+main {
+    margin-top: 2rem;
+}
+.about, .gallery-preview, .contact-preview {
+    margin-bottom: 3rem;
+}
+.gallery-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.gallery-row img {
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(38,56,89,0.15);
+    background: #ddd;
+}
+footer {
+    background: #263859;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+@media (max-width: 900px) {
+    .gallery-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-row img {
+        width: 90vw;
+        height: 30vw;
+        max-width: 400px;
+        max-height: 220px;
+    }
+}
