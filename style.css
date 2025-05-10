@@ -30,6 +30,11 @@ nav .logo {
     align-items: center;
     gap: 0.7rem;
 }
+nav .logo img {
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
 .logo-img {
     height: 40px;
     width: 40px;
